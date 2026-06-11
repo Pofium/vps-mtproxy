@@ -13,9 +13,9 @@ Requirements:
     pip install telethon cryptg python-socks
 
 Quick start:
-    export TG_PROXY_SERVER="161.0.20.76"
+    export TG_PROXY_SERVER="100.100.100.100"
     export TG_PROXY_PORT="443"
-    export TG_PROXY_SECRET="7mDY52TjFWo8wfro8v0CmrRyaWEucnU"
+    export TG_PROXY_SECRET="00...your_secret...00"
     export TG_BOT_TOKEN="123456:ABCdef..."
     python3 mtproto_tunnel.py ping
 
@@ -60,9 +60,9 @@ log = logging.getLogger("mtproto_tunnel")
 # ═══════════════════════════════════════════════════════════════════
 
 DEFAULT_PROXY = {
-    "server": "161.0.20.76",
+    "server": "100.100.100.100",  # Replace with your proxy IP
     "port": 443,
-    "secret": "7mDY52TjFWo8wfro8v0CmrRyaWEucnU",
+    "secret": "00...your_secret...00",  # Replace with your proxy secret
 }
 
 
@@ -361,7 +361,7 @@ Examples:
   python3 mtproto_tunnel.py status
 
 Environment:
-  TG_PROXY_SERVER  MTProto proxy host (default: 161.0.20.76)
+  TG_PROXY_SERVER  MTProto proxy host (default from DEFAULT_PROXY)
   TG_PROXY_PORT    MTProto proxy port (default: 443)
   TG_PROXY_SECRET  MTProto proxy secret (hex or base64 encoded)
   TG_BOT_TOKEN     Telegram bot token from @BotFather

@@ -31,9 +31,9 @@ systemctl start tor
 
 ```bash
 # MTProto прокси (обязательно)
-export TG_PROXY_SERVER="161.0.20.76"
+export TG_PROXY_SERVER="100.100.100.100"
 export TG_PROXY_PORT="443"
-export TG_PROXY_SECRET="7mDY52TjFWo8wfro8v0CmrRyaWEucnU"
+export TG_PROXY_SECRET="00...your_secret..."
 
 # Токен бота от @BotFather (обязательно для send)
 export TG_BOT_TOKEN="1234567890:ABCdef..."
